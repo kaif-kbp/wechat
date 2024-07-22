@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('image1.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .box{
+            width: 350px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            background: #212425;
+            opacity: 0.8;
+        }
+        #username,#password{
+            border: 2px solid #0097e6;
+            background:none;
+            display: block;
+            color: azure;
+            margin: 20px auto;
+            padding: 15px 45px;
+            text-align: center;
+            transition: 250ms width ease,250ms border-color ease;
+
+        }
+        #username:hover,#password:hover{
+            width: 220px;
+        }
+         #username:hover,#password:hover{
+            width: 250px;
+            border-color:rgb(97, 236, 120) ;
+         }
+         #submit{
+            border: none;
+            text-align: center;
+            margin: 20px auto;
+            padding: 15px 40px;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+            font-weight: 200;
+         }
+         #submit:hover{
+            background: rgb(97, 236, 120);
+         }
+    </style>
+</head>
+<body>
+    <form class="box">
+        <h1 style="color: rgb(255, 255, 255); text-transform: uppercase; font-weight: 500;">login please!</h1>
+        <input type="text" name="username" id="username" placeholder="Enter username" autocomplete="off">
+        <input type="password" name="password" id="password" placeholder="Enter password" autocomplete="off">
+        <input type="submit" id="submit" value="login">
+    </form>
+</body>
+</html>
